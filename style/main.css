@@ -1,0 +1,87 @@
+@font-face {
+    font-family:Figtree-ExtraBold;
+    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: Figtree-VariableFont;
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+    font-display: swap;
+}
+
+:root{
+    /* color */
+    --c-Yellow: hsl(47, 88%, 63%);
+    --c-White: hsl(0, 0%, 100%);
+    --c-Gray-500: hsl(0, 0%, 42%);
+    --c-Gray-950: hsl(0, 0%, 7%);
+    /* font */
+    --font-figtree-eb: 'Figtree-ExtraBold';
+    --font-figtree-var: 'Figtree-VariableFont';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--c-Yellow);
+    font-size: 12px;
+    font-family: var(--font-figtree-var);
+}
+.blog-card{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    width:279px;
+    min-height: max-content;
+    padding: 24px;
+    border-radius:20px; 
+    outline: 1px solid black;
+    box-shadow: 8px 8px ;
+    background-color: var(--c-White);
+    cursor: pointer;
+    transition: box-shadow .5s;
+}
+.blog-card:hover{
+    box-shadow: 12px 12px ;
+}
+.blog-card:hover .blog-title{
+    color: var(--c-Yellow);
+}
+.blog-img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-tag{
+    color: var(--c-Gray-950);
+    padding:4px 12px;
+    border-radius: 4px;
+    font-family: var(--font-figtree-eb);
+    background-color: var(--c-Yellow);
+}
+.blog-title{
+    font-family: var(--font-figtree-eb);
+    font-size:1.25rem;
+    color: var(--c-Gray-950);
+    transition: color .3s
+}
+
+.blog-decription{
+    margin-bottom: 0;
+    font-size: 0.87rem;
+    color: var(--c-Gray-500);
+}
+/* user name and avator */
+.blog-user{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-figtree-eb);
+    gap:12px
+}
+.user-avator{
+    display: block;
+    width: 32px;
+}
