@@ -21,7 +21,7 @@ This HTML & CSS-only challenge is a perfect project for beginners getting up to 
 ### Links
 
 - Solution URL: [Repo](https://github.com/sakthivel155/blog-preview-card-main)
-- Live Site URL: [Live Demo](https://sakthivel155.github.io/qr-code-component-main/)
+- Live Site URL: [Live Demo](https://sakthivel155.github.io/blog-preview-card-main/)
 
 ## My process
 
